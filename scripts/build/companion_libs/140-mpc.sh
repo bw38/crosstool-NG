@@ -10,10 +10,10 @@ do_mpc_for_host() { :; }
 # Overide functions depending on configuration
 if [ "${CT_MPC}" = "y" ]; then
 
-# Download MPC
+# Download MPC https://ftp.gnu.org/gnu/mpc/mpc-1.0.2.tar.gz
 do_mpc_get() {
     CT_GetFile "mpc-${CT_MPC_VERSION}" .tar.gz      \
-        http://www.multiprecision.org/mpc/download
+        https://ftp.gnu.org/gnu/mpc
 }
 
 # Extract MPC
